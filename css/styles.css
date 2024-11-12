@@ -33,7 +33,6 @@ img {
 }
 
 .container {
-    width: auto;
     padding-left: 156px;
     padding-right: 156px;
 }
@@ -43,14 +42,22 @@ img {
     padding-bottom: 120px;
 }
 
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
     display: flex;
     align-items: center;
+    width: 1158px;
+    padding: 0 15px;
+
 }
 
 
 .header-nav {
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -61,7 +68,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding-right: 76px;
+    margin-right: 76px;
 }
 
 .part-logo-header {
@@ -72,6 +79,7 @@ img {
     display: flex;
     gap: 40px;
     margin-right: 332px; 
+    padding: 24px 0;
 }
 
 .nav-item {
@@ -122,10 +130,11 @@ img {
     display: block;
     width: 1440px;
     height: 600px;
-    padding: 188px 472px;
+    padding: 188px 0;
 }
 
 .hero-title {
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -136,6 +145,10 @@ img {
 }
 
 .hero-button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     border-radius: 4px;
     background-color: #4D5AE5;
     font-weight: 500;
@@ -155,12 +168,13 @@ img {
     background-color: #404bbf;
 }
 
-.benefits {
-    padding: 120px 56px;
+.benefits-container {
+    padding: 120px 0;
+    
 }
 
 .visually-hidden {
-    position:absolute;
+    position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
@@ -174,12 +188,12 @@ img {
 .benefits-list {
     display: flex;
     justify-content: center;
+    gap: 24px;
     
 }
 
 .benefits-item {
-    width: 264px;
-    gap: 24px;
+    width: calc((100% - 72px) / 4);
 }
 
 .benefits-subtitle {
