@@ -36,15 +36,12 @@ img {
     width: auto;
     padding-left: 156px;
     padding-right: 156px;
-    margin-left: 
-    margin-right:
 }
 
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.header {}
 
 .header-container {
     display: flex;
@@ -244,7 +241,7 @@ img {
     background-color: #ffffff;
 }
 
-.portfolio {}
+
 
 .portfolio-title {
     font-weight: 700;
@@ -256,7 +253,9 @@ img {
     color: #2e2f42;
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+}
 
 .portfolio-subtitle {
     font-weight: 500;
