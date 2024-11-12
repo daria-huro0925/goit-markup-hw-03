@@ -51,7 +51,7 @@ img {
     align-items: center;
     width: 1158px;
     padding: 0 15px;
-
+margin: 0 auto;
 }
 
 
@@ -79,7 +79,6 @@ img {
     display: flex;
     gap: 40px;
     margin-right: 332px; 
-    padding: 24px 0;
 }
 
 .nav-item {
@@ -88,6 +87,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .nav-item:hover {
@@ -124,13 +124,13 @@ img {
 
 .hero {
     background-color: #2E2F42;
+padding: 188px 0;
 }
 
 .hero-container {
     display: block;
     width: 1440px;
     height: 600px;
-    padding: 188px 0;
 }
 
 .hero-title {
@@ -168,12 +168,14 @@ img {
     background-color: #404bbf;
 }
 
-.benefits-container {
-    padding: 120px 0;
-    
+.benefits {
+padding: 120px 0;
 }
 
-.visually-hidden {
+.benefits-container {
+    }
+
+.visually-hidden .benefits-title {
     position: absolute;
     width: 1px;
     height: 1px;
