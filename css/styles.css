@@ -3,9 +3,58 @@ body {
     color: #434455;
     background-color: #ffffff;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.team,
+.portfolio {
+    padding: 120px 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: auto;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: 
+    margin-right:
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .header {}
 
-.header-nav {}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-nav {
+    display: flex;
+}
 
 .logo {
     font-family: Raleway, sans-serif;
@@ -15,13 +64,18 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding-right: 76px;
 }
 
 .part-logo-header {
     color: #2E2F42;
 }
 
-.nav-list {}
+.nav-list {
+    display: flex;
+    gap: 40px;
+    margin-right: 332px; 
+}
 
 .nav-item {
     font-weight: 500;
@@ -41,6 +95,10 @@ body {
 
 .address {
     font-style: normal;
+}
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .address-item {
@@ -63,6 +121,13 @@ body {
     background-color: #2E2F42;
 }
 
+.hero-container {
+    display: block;
+    width: 1440px;
+    height: 600px;
+    padding: 188px 472px;
+}
+
 .hero-title {
     font-weight: 700;
     font-size: 56px;
@@ -70,9 +135,11 @@ body {
     letter-spacing: 0.02em;
     color: #ffffff;
     text-align: center;
+    margin-bottom: 48px;
 }
 
 .hero-button {
+    border-radius: 4px;
     background-color: #4D5AE5;
     font-weight: 500;
     line-height: 1.5;
@@ -91,13 +158,35 @@ body {
     background-color: #404bbf;
 }
 
-.benefits {}
+.benefits {
+    padding: 120px 56px;
+}
 
-.benefits-title {}
+.visually-hidden {
+    position:absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
-.benefits-list {}
+.benefits-list {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.benefits-item {
+    width: 264px;
+    gap: 24px;
+}
 
 .benefits-subtitle {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -118,6 +207,8 @@ body {
 }
 
 .team-title {
+    width: 162px;
+    height: 40px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -127,7 +218,10 @@ body {
     text-transform: capitalize;
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 .team-subtitle {
     font-weight: 500;
