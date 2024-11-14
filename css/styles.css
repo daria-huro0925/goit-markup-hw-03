@@ -53,13 +53,14 @@ img {
     align-items: center;
     width: 1158px;
     padding: 0 15px;
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 
 .header-nav {
     display: flex;
     align-items: center;
+    
 }
 
 .logo {
@@ -71,10 +72,12 @@ margin: 0 auto;
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
-}
+    padding: 24px 0;
+ }
 
 .part-logo-header {
     color: #2E2F42;
+    
 }
 
 .nav-list {
@@ -137,7 +140,7 @@ margin: 0 auto;
 }
 
 .hero-title {
-    width: 496px;
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -152,7 +155,7 @@ margin: 0 auto;
     display: block;
     justify-content: center;
     text-align: center;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     border: none;
     border-radius: 4px;
@@ -177,11 +180,12 @@ margin: 0 auto;
 .benefits {}
 
 .benefits-container {
+    display: flex;
     width: 1158px;
-    margin: 0 auto;
     justify-content: center;
-padding: 120px 0;
-    }
+    padding: 120px 156px;
+    margin: 0 auto;
+}
 
 .visually-hidden {
     position: absolute;
@@ -203,7 +207,7 @@ padding: 120px 0;
  }
 
 .benefits-item {
-    min-width: 264px;
+    width: calc((100% - 72px) / 4);
 }
 
 .benefits-subtitle {
