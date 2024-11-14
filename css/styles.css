@@ -177,13 +177,14 @@ img {
     background-color: #404bbf;
 }
 
-.benefits {}
+.benefits {
+    padding: 120px 0;
+}
 
 .benefits-container {
     display: flex;
     width: 1158px;
     justify-content: center;
-    padding: 120px 0;
     margin: 0 auto;
 }
 
