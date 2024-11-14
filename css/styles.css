@@ -133,11 +133,11 @@ margin: 0 auto;
     display: block;
     width: 1440px;
     height: 600px;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .hero-title {
-    min-width: 496px;
+    width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -145,14 +145,13 @@ margin: 0 auto;
     color: #ffffff;
     text-align: center;
     justify-content: center;
-    margin-top: 260px;
-    margin-left: 472px;
+    margin: 188px auto 48px auto;
 }
 
 .hero-button {
-    display: inline-flex;
-    align-items: center;
+    display: block;
     justify-content: center;
+    text-align: center;
     width: 169px;
     height: 56px;
     border: none;
@@ -164,8 +163,7 @@ margin: 0 auto;
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    margin-top: 48px;
-    margin-left: 636px;
+    margin: 0 auto;
 }
 
 .hero-button:hover {
@@ -176,14 +174,13 @@ margin: 0 auto;
     background-color: #404bbf;
 }
 
-.benefits {
-padding: 120px 0;
-}
+.benefits {}
 
 .benefits-container {
     width: 1158px;
     margin: 0 auto;
     justify-content: center;
+padding: 120px 0;
     }
 
 .visually-hidden {
@@ -203,7 +200,7 @@ padding: 120px 0;
     display: flex;
     text-align: left;
     gap: 24px;
-}
+ }
 
 .benefits-item {
     min-width: 264px;
@@ -230,22 +227,26 @@ padding: 120px 0;
     background-color: #f4f4fd;
 }
 
+.team-container {
+    display: block;
+    margin: 0 auto;
+}
+
 .team-title {
-    width: 162px;
-    height: 40px;
+    min-width: 162px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #2E2F42;
     text-transform: capitalize;
+    padding-left: 483px;
     margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: row;
     gap: 24px;
 }
 
@@ -284,6 +285,12 @@ padding: 120px 0;
 .team-container {
 padding: 32px 0;
 
+}
+
+.portfolio-container {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .portfolio-title {
@@ -339,6 +346,7 @@ padding: 32px 0;
 .footer-container {}
 
 .footer-text {
+    width: 264px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -346,7 +354,7 @@ padding: 32px 0;
     color: #f4f4fd;
 }
 .logo {
-display: inline-block;
+    display: inline-block;
     margin-bottom: 16px;
 }
 
