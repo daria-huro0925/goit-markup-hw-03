@@ -10,19 +10,22 @@ h3,
 h4,
 h5,
 h6,
-p,
-ul {
+p, {
     margin: 0;
 }
 
-ul {
-    padding-left: 0;
-}
-
-li {
+ul,
+ol {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+.benefits,
 .team,
 .portfolio {
     padding: 120px 0;
@@ -31,18 +34,20 @@ li {
 img {
     display: block;
     width: 100%;
+    height: auto;
 }
+
+/* common */
 
 .container {
     max-width: 1158px;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+.section {}
+
+/* header */
 
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -51,16 +56,11 @@ img {
 .header-container {
     display: flex;
     align-items: center;
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
 }
-
 
 .header-nav {
     display: flex;
     align-items: center;
-    
 }
 
 .logo {
@@ -71,22 +71,26 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
+}
+
+ .header-logo {
     padding: 24px 0;
+    margin-right: 76px;
  }
 
-.part-logo-header {
+
+  .part-logo-header {
     color: #2E2F42;
-    
 }
 
 .nav-list {
     display: flex;
+    align-items: center;
     gap: 40px;
-    margin-right: 332px; 
 }
 
 .nav-item {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -104,15 +108,18 @@ img {
 }
 
 .address {
+    margin-left: auto;
     font-style: normal;
 }
 .address-list {
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
 .address-item {
-    font-weight: 400;
+    display: block;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -127,34 +134,31 @@ img {
     color: #404bbf;
 }
 
+/* section 1 */
+
 .hero {
     background-color: #2E2F42;
-    padding: 188px 0;
 }
 
 .hero-container {
-    display: block;
-    width: 1440px;
-    height: 600px;
-    margin: 0 auto;
 }
 
 .hero-title {
-    max-width: 496px;
+    width: 496px;
+    margin: 0 auto;
+    padding-top: 120px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #ffffff;
-    text-align: center;
-    justify-content: center;
-    margin: 188px auto 48px auto;
+    margin-bottom: 48px;
 }
 
 .hero-button {
-    display: block;
+    display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -167,6 +171,7 @@ img {
     color: #ffffff;
     cursor: pointer;
     margin: 0 auto;
+    padding-bottom: 196px;
 }
 
 .hero-button:hover {
@@ -177,15 +182,13 @@ img {
     background-color: #404bbf;
 }
 
-.benefits {
-    padding: 120px 0;
-}
+/* section 2 */
+
+.benefits {}
 
 .benefits-container {
     display: flex;
-    width: 1158px;
-    justify-content: center;
-    margin: 0 auto;
+    align-items: center;
 }
 
 .visually-hidden {
@@ -228,14 +231,13 @@ img {
     color: #434455;
 }
 
+/* section 3 */
+
 .team {
     background-color: #f4f4fd;
 }
 
-.team-container {
-    display: block;
-    margin: 0 auto;
-}
+.team-container {}
 
 .team-title {
     min-width: 162px;
@@ -246,17 +248,31 @@ img {
     color: #2E2F42;
     text-transform: capitalize;
     padding-left: 483px;
+    margin: 0 auto;
     margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
-    flex-wrap: row;
+    align-items: center;
+    flex-wrap: nowrap;
     gap: 24px;
 }
 
-.team-subtitle {
+.team-item {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+}
+
+.team-card-content {
+    min-width: 232px;
+    padding: 32px 16px;
     text-align: center;
+}
+
+.team-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -268,7 +284,6 @@ img {
 }
 
 .team-text {
-    text-align: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -282,15 +297,9 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-card-content {
-    padding: 32px 0;
+/* section 4 */
 
-}
-
-.team-container {
-padding: 32px 0;
-
-}
+.portfolio {}
 
 .portfolio-container {
     display: block;
