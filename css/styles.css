@@ -4,15 +4,7 @@ body {
     background-color: #ffffff;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p, {
-    margin: 0;
-}
+h1, h2, h3, h4, h5, h6, p { margin: 0;}
 
 ul,
 ol {
@@ -145,13 +137,13 @@ img {
 
 .hero-title {
     max-width: 496px;
-    margin: 0 auto;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-bottom: 48px;
+    margin: 0 auto 48px auto;
+    text-align: center;
 }
 
 .hero-button {
@@ -232,21 +224,20 @@ img {
 /* section 3 */
 
 .team {
-    background-color: #f4f4fd;
-}
+    background-color: #f4f4fd; }
 
 .team-container {}
 
 .team-title {
-    width: 162px;
+    min-width: 162px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-transform: capitalize;
-    margin: 0 auto;
-    margin-bottom: 72px;
+    margin: 0 auto 72px auto;
+    text-align: center;
 }
 
 .team-list {
